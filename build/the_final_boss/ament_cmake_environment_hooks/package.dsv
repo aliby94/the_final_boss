@@ -1,0 +1,4 @@
+source;share/the_final_boss/local_setup.bash
+source;share/the_final_boss/local_setup.dsv
+source;share/the_final_boss/local_setup.sh
+source;share/the_final_boss/local_setup.zsh

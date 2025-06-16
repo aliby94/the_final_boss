@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="the_final_boss">
+  
+  <!-- ========================================= -->
+  <!-- ROBOT BASE DEFINITION (OUR STARTING POINT) -->
+  <!-- ========================================= -->
+  
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.2 0.1"/>  <!-- Your robot dimensions -->
+      </geometry>
+      <material name="blue">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.3 0.2 0.1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <!-- ========================================= -->
+  <!-- IMU ON TOP (UPSIDE DOWN) -->
+  <!-- ========================================= -->
+  
+  <link name="imu_link">
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.02"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+  
+  <joint name="base_to_imu" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0.0 0.0 0.06" rpy="0 3.141592653589793 0"/>
+  </joint>
+
+  <!-- ========================================= -->
+  <!-- APRILTAG RELATIVE TO ROBOT BASE -->
+  <!-- ========================================= -->
+  
+  <link name="Apriltag">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.005"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+  
+  <joint name="base_to_apriltag" type="fixed">
+    <parent link="base_link"/>
+    <child link="Apriltag"/>
+    <!-- 
+    Original was: object → base_link with xyz="0.0 -0.0575 -0.045" rpy="-1.5708 -1.5708 0"
+    
+    To reverse: base_link → Apriltag
+    Translation: negate and apply inverse rotation
+    Rotation: negate all angles
+    
+    Reversed values:
+    -->
+    <origin xyz="0.045 0.0575 0.0" rpy="-1.5708 0 -1.5708"/>
+  </joint>
+
+</robot>

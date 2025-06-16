@@ -1,0 +1,9 @@
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/uninstall.dir
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/the_final_boss_uninstall.dir
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/test.dir
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/edit_cache.dir
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/rebuild_cache.dir
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/list_install_components.dir
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/install.dir
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/install/local.dir
+/home/ali/the_final_boss/build/the_final_boss/CMakeFiles/install/strip.dir

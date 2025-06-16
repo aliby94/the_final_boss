@@ -1,0 +1,1 @@
+/home/ali/the_final_boss/build/the_final_boss/ament_cmake_environment_hooks/local_setup.sh
