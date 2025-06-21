@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(PROGRAMS "scripts/robot_pose_calculator.py" "DESTINATION" "lib/the_final_boss")
-ament_cmake_symlink_install_programs("/home/ali/the_final_boss" PROGRAMS "scripts/robot_pose_calculator.py" "DESTINATION" "lib/the_final_boss")
+# install(PROGRAMS "scripts/robot_pose_calculator.py" "scripts/robot_pose_calculator2.py" "DESTINATION" "lib/the_final_boss")
+ament_cmake_symlink_install_programs("/home/ali/the_final_boss" PROGRAMS "scripts/robot_pose_calculator.py" "scripts/robot_pose_calculator2.py" "DESTINATION" "lib/the_final_boss")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/the_final_boss/")
 ament_cmake_symlink_install_directory("/home/ali/the_final_boss" DIRECTORY "launch" "DESTINATION" "share/the_final_boss/")

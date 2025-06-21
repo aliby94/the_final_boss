@@ -1,0 +1,57 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found tf2_ros: 0.36.11 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found robot_localization: 3.8.2 (/opt/ros/jazzy/share/robot_localization/cmake)
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ali/the_final_boss/build/the_final_boss
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/lib/the_final_boss/robot_pose_calculator.py
+-- Symlinking: /home/ali/the_final_boss/install/the_final_boss/lib/the_final_boss/robot_pose_calculator2.py
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/ekf_only.launch.py
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/pose_calculator_only.launch.py
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/robot_description_only.launch.py
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/robot_display.launch.py
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/robot_localization.launch.py
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//urdf/robot.urdf.xacro
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//config/ekf.yaml
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/ament_index/resource_index/package_run_dependencies/the_final_boss
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/ament_index/resource_index/parent_prefix_path/the_final_boss
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/environment/path.sh
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/environment/path.dsv
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/local_setup.bash
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/local_setup.sh
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/local_setup.zsh
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/local_setup.dsv
+-- Symlinking: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/package.dsv
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/ament_index/resource_index/packages/the_final_boss
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/cmake/the_final_bossConfig.cmake
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/cmake/the_final_bossConfig-version.cmake
+-- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/package.xml

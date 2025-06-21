@@ -1,0 +1,61 @@
+[0.015s] Invoking command in '/home/ali/the_final_boss/build/the_final_boss': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ali/the_final_boss/build/the_final_boss -- -j12 -l12
+[0.047s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.256s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.270s] -- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.270s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.306s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.317s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.329s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.343s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.386s] -- Found tf2_ros: 0.36.11 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[0.471s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.473s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.539s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.692s] -- Found robot_localization: 3.8.2 (/opt/ros/jazzy/share/robot_localization/cmake)
+[0.772s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.796s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.891s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.951s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.951s] -- Configured cppcheck include dirs: 
+[0.951s] -- Configured cppcheck exclude dirs and/or files: 
+[0.983s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.984s] -- Configured cpplint exclude dirs and/or files: 
+[0.988s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.988s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.996s] -- Added test 'lint_cmake' to check CMake code style
+[1.000s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.033s] -- Added test 'uncrustify' to check C / C++ code style
+[1.033s] -- Configured uncrustify additional arguments: 
+[1.037s] -- Added test 'xmllint' to check XML markup files
+[1.039s] -- Configuring done (1.0s)
+[1.047s] -- Generating done (0.0s)
+[1.050s] -- Build files have been written to: /home/ali/the_final_boss/build/the_final_boss
+[1.079s] Invoked command in '/home/ali/the_final_boss/build/the_final_boss' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ali/the_final_boss/build/the_final_boss -- -j12 -l12
+[1.091s] Invoking command in '/home/ali/the_final_boss/build/the_final_boss': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ali/the_final_boss/build/the_final_boss
+[1.100s] -- Install configuration: ""
+[1.100s] -- Execute custom install script
+[1.100s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/lib/the_final_boss/robot_pose_calculator.py
+[1.100s] -- Symlinking: /home/ali/the_final_boss/install/the_final_boss/lib/the_final_boss/robot_pose_calculator2.py
+[1.111s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/ekf_only.launch.py
+[1.111s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/pose_calculator_only.launch.py
+[1.111s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/robot_description_only.launch.py
+[1.111s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/robot_display.launch.py
+[1.111s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//launch/robot_localization.launch.py
+[1.111s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//urdf/robot.urdf.xacro
+[1.112s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss//config/ekf.yaml
+[1.112s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/ament_index/resource_index/package_run_dependencies/the_final_boss
+[1.112s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/ament_index/resource_index/parent_prefix_path/the_final_boss
+[1.112s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/environment/ament_prefix_path.sh
+[1.112s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/environment/ament_prefix_path.dsv
+[1.112s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/environment/path.sh
+[1.112s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/environment/path.dsv
+[1.112s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/local_setup.bash
+[1.113s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/local_setup.sh
+[1.113s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/local_setup.zsh
+[1.113s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/local_setup.dsv
+[1.113s] -- Symlinking: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/package.dsv
+[1.124s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/ament_index/resource_index/packages/the_final_boss
+[1.124s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/cmake/the_final_bossConfig.cmake
+[1.124s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/cmake/the_final_bossConfig-version.cmake
+[1.124s] -- Up-to-date symlink: /home/ali/the_final_boss/install/the_final_boss/share/the_final_boss/package.xml
+[1.126s] Invoked command in '/home/ali/the_final_boss/build/the_final_boss' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ali/the_final_boss/build/the_final_boss
