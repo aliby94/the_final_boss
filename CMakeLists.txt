@@ -16,6 +16,7 @@ find_package(sensor_msgs REQUIRED)
 # Install Python scripts
 install(PROGRAMS
   scripts/robot_pose_calculator.py
+  scripts/robot_pose_calculator2.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -33,20 +33,20 @@
     # odom0: IMU data
     imu0: /imu/data
     imu0_config: [false, false, false,   # x, y, z positions
-                   true,  true,  true,    # roll, pitch, yaw orientations  
-                   false, false, false,   # x, y, z velocities
-                   true,  true,  true,    # roll, pitch, yaw angular velocities
-                   true,  true,  true]    # x, y, z linear accelerations
+                  true, true, true,    # roll, pitch, yaw orientations  
+                  false, false, false,   # x, y, z velocities
+                  true, true, true,    # roll, pitch, yaw angular velocities
+                  true, true, true]    # x, y, z linear accelerations
     
     imu0_queue_size: 10
     imu0_nodelay: true
-    imu0_differential: false
+    imu0_differential: true
     imu0_relative: false
     
     # pose0: AprilTag-based pose estimates
     pose0: /robot_pose_estimate
-    pose0_config: [true,  true,  true,    # x, y, z positions
-                   true,  true,  true,    # roll, pitch, yaw orientations
+    pose0_config: [true, true, true,    # x, y, z positions
+                   true, true, true,    # roll, pitch, yaw orientations
                    false, false, false,   # x, y, z velocities
                    false, false, false,   # roll, pitch, yaw angular velocities  
                    false, false, false]   # x, y, z linear accelerations

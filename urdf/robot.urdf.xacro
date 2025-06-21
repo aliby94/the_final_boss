@@ -43,7 +43,7 @@
   <joint name="base_to_imu" type="fixed">
     <parent link="base_link"/>
     <child link="imu_link"/>
-    <origin xyz="0.0 0.0 0.06" rpy="0 3.141592653589793 0"/>
+    <origin xyz="0.0 0.0 0.06" rpy="0 0 0"/>
   </joint>
 
   <!-- ========================================= -->
@@ -73,7 +73,7 @@
     
     Reversed values:
     -->
-    <origin xyz="0.045 0.0575 0.0" rpy="-1.5708 0 -1.5708"/>
+    <origin xyz="0.045 0 0.0" rpy="1.5708 0 1.5708"/>
   </joint>
 
 </robot>

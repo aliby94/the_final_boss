@@ -8,7 +8,7 @@ def generate_launch_description():
     # Robot Pose Calculator (calculates robot pose from AprilTag + URDF)
     pose_calculator_node = Node(
         package='the_final_boss',
-        executable='robot_pose_calculator.py',
+        executable='robot_pose_calculator2.py',
         name='robot_pose_calculator',
         output='screen',
         parameters=[
