@@ -4,7 +4,7 @@
     # Fuses IMU data with AprilTag-based pose estimates
     
     # The frequency at which the filter will output a position estimate
-    frequency: 10.0
+    frequency: 30.0
     
     # Sensor timeout (sensors not heard from in this time are ignored)
     sensor_timeout: 0.1
@@ -17,14 +17,14 @@
     debug: false
     
     # REP-105 compliant frame specifications
-    map_frame: camera_link                    # Global fixed frame
+    map_frame: camera_link                   # Global fixed frame
     odom_frame: odom                  # Odometry frame (locally accurate)
     base_link_frame: base_link        # Robot base frame
     world_frame: camera_link                 # Using odom as world reference (changed from camera frame)
     
     # Transform publishing
     publish_tf: true
-    publish_acceleration: false
+    publish_acceleration: true
     
     # If true, the state vector will include the 3D velocity
     print_diagnostics: true
@@ -36,13 +36,14 @@
                   true, true, true,    # roll, pitch, yaw orientations  
                   false, false, false,   # x, y, z velocities
                   true, true, true,    # roll, pitch, yaw angular velocities
-                  true, true, true]    # x, y, z linear accelerations
+                  false, false, false]    # x, y, z linear accelerations
     
     imu0_queue_size: 10
     imu0_nodelay: true
-    imu0_differential: true
+    imu0_differential: false
     imu0_relative: false
-    
+    imu0_remove_gravitational_acceleration: true
+
     # pose0: AprilTag-based pose estimates
     pose0: /robot_pose_estimate
     pose0_config: [true, true, true,    # x, y, z positions
@@ -72,7 +73,7 @@
                                   0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  1e-9, 0.0,  0.0,  0.0,
                                   0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  1e-9, 0.0,  0.0,
                                   0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  1e-9, 0.0,
-                                  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  1e-9]
+                                  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  100.0]
     
     # Process noise covariance - all values as floats
     process_noise_covariance: [0.05, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
@@ -89,4 +90,4 @@
                                0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.02, 0.0,  0.0,  0.0,
                                0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,
                                0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,
-                               0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.015]
+                               0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  1e-9]

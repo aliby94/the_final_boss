@@ -1,0 +1,76 @@
+/**:
+  ros__parameters:
+    frequency: 20.0
+    sensor_timeout: 0.1
+    two_d_mode: false
+    debug: true
+    debug_out_file: /tmp/ekf_debug.txt
+
+    map_frame: camera_link
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: camera_link
+
+    publish_tf: true
+    publish_acceleration: true
+    print_diagnostics: true
+
+    # IMU
+    imu0: /imu/data
+    imu0_config: [
+      false, false, false,   # pos (x, y, z)
+      false, false, false,   # orientation (r, p, y)
+      false, false, false,   # velocity (x, y, z)
+      true, true, true,      # angular vel (r, p, y)
+      true, true, true       # linear accel (x, y, z)
+    ]
+    imu0_queue_size: 10
+    imu0_nodelay: true
+    imu0_differential: false
+    imu0_relative: false
+
+    # Pose from your Apriltag-derived node
+    pose0: /robot_pose_estimate
+    pose0_config: [
+      true, true, true,      # pos (x, y, z)
+      true, true, true,      # orientation (r, p, y)
+      false, false, false,   # velocity
+      false, false, false,   # angular velocity
+      false, false, false    # linear acceleration
+    ]
+    pose0_queue_size: 10
+    pose0_nodelay: true
+    pose0_differential: false
+    pose0_relative: false
+
+    imu1: /fake_velocity
+    imu1_config: [
+      false, false, false,   # x, y, z positions (ignored)
+      false, false, false,   # roll, pitch, yaw (ignored)
+      true, true, true,      # linear velocities x, y, z
+      false, false, false,   # angular velocities (ignored)
+      true, true, true    # linear acceleration (ignored)
+    ]
+    imu1_nodelay: true
+    imu1_differential: false
+    imu1_relative: false
+    imu1_queue_size: 10
+  
+  # Process noise covariance (lower Z drift)
+    process_noise_covariance: [
+      0.05, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.05, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.03, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.03, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.03, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.025, 0.0, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.025, 0.0, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.025, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.02, 0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.015, 0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.015, 0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.015
+    ]
